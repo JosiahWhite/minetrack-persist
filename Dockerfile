@@ -17,4 +17,4 @@ RUN ln -s /data/database.sql ./database.sql
 
 ADD config.json config.json
 
-CMD ./scripts/start.sh
+ENTRYPOINT [ "/bin/sh", "-c", "/Minetrack/scripts/start.sh" ]
